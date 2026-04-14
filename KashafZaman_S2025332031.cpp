@@ -61,7 +61,7 @@ void findMinMax(int arr[], int size, int &minVal, int &maxVal) {
 
 void printArray(int arr[], int size) {
     for(int i = 0; i < size; i++)
-        cout << arr[i] << " "<<endl;
+        cout << arr[i] << " ";
     
 }
 
@@ -79,7 +79,7 @@ void bubbleSort(int arr[], int size, int &swapCount) {
             }
         }
 
-        cout << "After pass " << i+1 << ": ";
+         cout << "After pass " << i+1 << ": ";
         printArray(arr, size);
 
         if(!swapped)
@@ -132,29 +132,29 @@ int binarySearch(int arr[], int size, int key, int &iterations) {
 //  Example using Linear Search:
 // Big O (Worst Case):
 // When the element is at the last position or not present at all.
-// We have to check all n elements → O(n)
+// We have to check all n elements -> O(n)
 //
 // Big Omega (Best Case):
 // When the element is at the first position.
-// Only 1 comparison is needed → Ω(1)
+// Only 1 comparison is needed -> Ω(1)
 //
 // Big Theta (Average Case):
 // On average, the element is found somewhere in the middle.
-// About n/2 comparisons → Θ(n)
+// About n/2 comparisons -> Θ(n)
 
 // Q4.A.3
 // Fastest to slowest: O(1), O(log n), O(n), O(n log n), O(n^2)
 
 // Q4.A.4
 // Space complexity measures memory usage.
-// If array of size n is created → O(n).
+// If array of size n is created -> O(n).
 
 // Q4.A.5
 // Incorrect. For large n, O(n log n) is always better than O(n^2).
 
 // Q4 – CODE
 
-// Nested loop → O(n^2)
+// Nested loop -> O(n^2)
 void nestedLoop(int arr[], int n) {
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++) {
@@ -163,7 +163,7 @@ void nestedLoop(int arr[], int n) {
     }
 }
 
-// Single loop → O(n)
+// Single loop -> O(n)
 void singleLoop(int arr[], int n) {
     for(int i = 0; i < n; i++) {
         cout << arr[i] << " "<<endl;
@@ -201,7 +201,7 @@ bool checkElements(int A[], int B[], int n) {
 // Not deleting node causes memory leak.
 // Avoid by using delete.
 
-// ===================== Q5 – CODE =====================
+// Q5 – CODE 
 
 struct Node {
     int data;
